@@ -5,6 +5,7 @@ import { getAllListingsRoute } from "./getAllListings";
 import { getListingRoute } from "./getListing";
 import { getUserListingsRoute } from "./getUserListings";
 import { updateListingRoute } from "./updateListing";
+import { staticFilesRoute, filesRoutes } from './files'
 
 export default [
     addViewToListingRoute,
@@ -14,4 +15,6 @@ export default [
     getListingRoute,
     getUserListingsRoute,
     updateListingRoute,
+    staticFilesRoute,
+    ...filesRoutes,
 ];
